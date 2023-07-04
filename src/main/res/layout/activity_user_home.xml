@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.UserHome">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/dateOfTravel"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Select Date"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Source"
+            android:id="@+id/usersearchsource"/>
+
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination"
+            android:id="@+id/usersearchdestination"/>
+
+        <Button
+            android:id="@+id/usersearchButton"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+
+        <Button
+            android:id="@+id/userViewTickets"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Tickets"/>
+
+        <Button
+            android:id="@+id/userlogout"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.AddBus"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bus Name"
+        android:id="@+id/addbusname"/>
+
+        <EditText
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Bus NO"
+            android:id="@+id/addbusnumber"/>
+
+            <EditText
+                android:inputType="phone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter NO OF Seats"
+                android:id="@+id/addbusnoofseats"/>
+
+            <TextView
+                android:textSize="23dp"
+                android:text="Select Bus Type"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerBusType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/addbusimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/addbuschooseimagebutton"
+                android:text="Take Photo"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter soruce"
+                android:id="@+id/addbussource"/>
+
+            <EditText
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Destination"
+                android:id="@+id/addbusdestination"/>
+
+            <EditText
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:id="@+id/addbusmobile"/>
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Start Time"
+                android:id="@+id/addbusstarttime"/>
+
+
+            <EditText
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:id="@+id/addbuspassword"/>
+
+            <Button
+                android:id="@+id/addbussubmitButton"
+                android:text="Add Bus"
+                android:textSize="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addbussubmitCancel"
+            android:text="Cancel"
+            android:textSize="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
